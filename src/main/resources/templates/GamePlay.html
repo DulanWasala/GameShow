@@ -10,7 +10,7 @@
  <header><h1>GameShow</h1></header>
  <main>
      <h2>Pick one of the Gifts Below</h2>
-     <p>
+     <div id="Gifts">
          <img th:src="@{|images/Gift.png|}" width="400" height="500">
          <img th:src="@{|images/Gift.png|}" width="400" height="500">
          <img th:src="@{|images/Gift.png|}" width="400" height="500">
@@ -19,8 +19,16 @@
          <img src="../images/Gift.png" width="400" height="500">
          <img src="../images/Gift.png" width="400" height="500">
          <!--*/-->
-     </p>
-
+     </div>
+     <form action="GameResult.html" >
+         <label> Gift 1</label>
+         <input type="radio" id="gift" name="gifts" value="1">
+         <label> Gift 2</label>
+         <input type="radio" id="gift2" name="gifts" value="2">
+         <label> Gift 3</label>
+         <input type="radio" id="gift3" name="gifts" value="3">
+         <input type="submit" value="Submit">
+     </form>
  </main>
  <footer>
      Dulan Wasala
