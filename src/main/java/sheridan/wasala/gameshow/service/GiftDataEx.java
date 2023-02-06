@@ -1,7 +1,7 @@
 package sheridan.wasala.gameshow.service;
+
 import java.util.Collections;
 import java.util.List;
-
 
 public class GiftDataEx implements GiftData {
 
@@ -13,7 +13,7 @@ public class GiftDataEx implements GiftData {
 
     }
     @Override
-    public List<Integer> getValues() {
+    public List<Integer> getGifts() {
 
         return gifts;
     }
