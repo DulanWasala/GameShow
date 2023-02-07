@@ -7,9 +7,27 @@
     <title>GameShow</title>
 </head>
 <body>
-
-</body>
+<header><h1>GameShow</h1></header>
+<main>
+    <h2>These are the Gifts</h2>
+    <div id="Gifts">
+        <img th:each="gift: ${giftData.gifts}"
+             th:src="@{|images/Gifts/Gift_${gift}.png|}"
+             width="200"
+             height="200"
+             >
+        <!--/*-->
+        <img src="../static/images/Gift.png" width="200" height="200">
+        <img src="../static/images/Gift.png" width="200" height="200">
+        <img src="../static/images/Gift.png" width="200" height="200">
+        <!--*/-->
+    </div>
+    <form >
+        <input type="submit" value="Play Again">
+    </form>
+</main>
 <footer>
-    Dulan Wasala
+ Dulan Wasala
 </footer>
+</body>
 </html>

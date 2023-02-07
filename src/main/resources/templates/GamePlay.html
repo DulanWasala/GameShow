@@ -11,27 +11,28 @@
  <main>
      <h2>Pick one of the Gifts Below</h2>
      <div id="Gifts">
-         <img th:src="@{|images/Gift.png|}" width="400" height="500">
-         <img th:src="@{|images/Gift.png|}" width="400" height="500">
-         <img th:src="@{|images/Gift.png|}" width="400" height="500">
+         <img th:src="@{|images/Gift.png|}" width="200" height="200">
+         <img th:src="@{|images/Gift.png|}" width="200" height="200">
+         <img th:src="@{|images/Gift.png|}" width="200" height="200">
          <!--/*-->
          <img src="../static/images/Gift.png" width="400" height="500">
          <img src="../static/images/Gift.png" width="400" height="500">
          <img src="../static/images/Gift.png" width="400" height="500">
          <!--*/-->
      </div>
-     <form action="GameResult.html" >
+     <form>
          <label> Gift 1</label>
          <input type="radio" id="gift" name="gifts" value="1">
          <label> Gift 2</label>
          <input type="radio" id="gift2" name="gifts" value="2">
          <label> Gift 3</label>
          <input type="radio" id="gift3" name="gifts" value="3">
+         <input type="hidden" th:name="madeG" value="true">
          <input type="submit" value="Submit">
      </form>
  </main>
  <footer>
-     Dulan Wasala
+    Dulan Wasala
  </footer>
 </body>
 </html>

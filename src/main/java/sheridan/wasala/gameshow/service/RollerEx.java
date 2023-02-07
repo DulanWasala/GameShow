@@ -19,7 +19,7 @@ public class RollerEx implements Roller{
 
     @Override
     public GiftData getGifts(){
-        List<Integer> temp = r.ints(4,1,7).boxed().collect(Collectors.toList());
+        List<Integer> temp = r.ints(3,1,4).boxed().collect(Collectors.toList());
         return new GiftDataEx(temp);
     }
 
